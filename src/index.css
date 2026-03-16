@@ -11,6 +11,9 @@ html {
 }
 
 body {
+  background-color: #05070d;
+  color: #ffffff;
+  font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui;
   @apply bg-base-900 text-white font-body;
 }
 
