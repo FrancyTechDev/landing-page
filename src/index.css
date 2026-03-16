@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-base-900 text-white font-body;
+}
+
+::selection {
+  background: rgba(59, 217, 255, 0.3);
+}
+
+.section-shell {
+  @apply relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-glass;
+}
+
+.glass-card {
+  @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-glass;
+}
+
+.gradient-border {
+  position: relative;
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(110, 231, 255, 0.35), rgba(141, 123, 255, 0.35));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.noise-bg {
+  background-image: radial-gradient(rgba(59, 217, 255, 0.1) 1px, transparent 0),
+    radial-gradient(rgba(141, 123, 255, 0.08) 1px, transparent 0);
+  background-size: 120px 120px, 200px 200px;
+  background-position: 0 0, 40px 60px;
+}
