@@ -1,50 +1,32 @@
 import SectionHeader from "./SectionHeader";
 import { motion } from "framer-motion";
-import {
-  Layers,
-  Sparkles,
-  HardDrive,
-  Watch,
-  HeartPulse,
-  Globe2,
-  GraduationCap
-} from "lucide-react";
+import { Layers, HardDrive, Watch, HeartPulse, Globe2 } from "lucide-react";
 
 const strengths = [
   {
     icon: Layers,
     title: "Integrazione multidisciplinare",
-    text: "Ambiente, bioingegneria, elettronica, data science in un unico progetto." 
-  },
-  {
-    icon: Sparkles,
-    title: "Approccio innovativo",
-    text: "Uno sguardo scientifico sul rischio neurodegenerativo con strumenti reali." 
+    text: "Unione di ambiente, salute e tecnologia."
   },
   {
     icon: HardDrive,
     title: "Sistema locale/offline",
-    text: "Elaborazione indipendente dalla rete per continuità e controllo dei dati." 
+    text: "Elaborazione autonoma e controllata."
   },
   {
     icon: Watch,
     title: "Wearable multisensoriale",
-    text: "Sensori IMU e GSR per leggere micro-segnali fisiologici." 
+    text: "Raccolta dati fisiologici in modo non invasivo."
   },
   {
     icon: HeartPulse,
-    title: "Prevenzione e qualità della vita",
-    text: "Focalizzato su interpretazione precoce e monitoraggio evolutivo." 
+    title: "Focus sulla prevenzione",
+    text: "Attenzione a qualità della vita e monitoraggio."
   },
   {
     icon: Globe2,
     title: "Ambiente e salute",
-    text: "Correlazione tra inquinamento e indicatori neuro-vegetativi." 
-  },
-  {
-    icon: GraduationCap,
-    title: "Valore educativo",
-    text: "Progetto didattico avanzato con metodo e rigore scientifico." 
+    text: "Lettura contestualizzata dei dati."
   }
 ];
 
@@ -54,8 +36,8 @@ const StrengthsSection = () => {
       <div className="mx-auto max-w-6xl space-y-10">
         <SectionHeader
           eyebrow="Punti di forza"
-          title="Perché Parkins-Off è un progetto di livello concorsuale"
-          description="Una piattaforma sperimentale che unisce rigore scientifico e design tecnologico, con obiettivi chiari e verificabili."
+          title="Perché Parkins-Off resta credibile e solido"
+          description="Punti di forza sintetici, senza entrare in dettagli proprietari."
         />
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {strengths.map((item, index) => (

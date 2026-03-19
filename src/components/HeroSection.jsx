@@ -33,16 +33,14 @@ const HeroSection = () => {
             ))}
           </div>
           <h1 className="font-display text-4xl font-semibold leading-tight md:text-5xl">
-            Parkins-Off: la scienza che connette ambiente, salute e AI
+            Parkins-Off: ambiente, salute e AI in un unico progetto
           </h1>
           <p className="text-lg text-white/70 md:text-xl">
-            Un sistema integrato che misura l'inquinamento atmosferico, interpreta i dati
-            fisiologici e suggerisce indicatori di rischio neurodegenerativo con intelligenza
-            artificiale locale.
+            Una piattaforma integrata che studia la relazione tra qualità dell'aria e segnali
+            fisiologici, con elaborazione locale.
           </p>
           <p className="text-base text-white/60">
-            Non solo Parkinson. È un ecosistema tecnologico che unisce sensori, prevenzione e
-            ricerca applicata.
+            Presentazione sintetica e protetta, con focus sul valore scientifico.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
@@ -68,10 +66,9 @@ const HeroSection = () => {
           <div className="flex h-full flex-col justify-between gap-6">
             <div className="space-y-4">
               <p className="text-sm uppercase tracking-[0.2em] text-white/50">Sistema integrato</p>
-              <h3 className="text-2xl font-semibold">Sensori ambientali + wearable + AI offline</h3>
+              <h3 className="text-2xl font-semibold">Ambiente + wearable + AI offline</h3>
               <p className="text-sm text-white/60">
-                Una composizione grafica che simula i moduli principali: particolato atmosferico,
-                segnali neuro-vegetativi e analisi predittiva.
+                Composizione grafica dei moduli principali, senza entrare nei dettagli tecnici.
               </p>
             </div>
             <div className="grid gap-4 md:grid-cols-3">

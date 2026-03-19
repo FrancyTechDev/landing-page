@@ -5,23 +5,18 @@ import { motion } from "framer-motion";
 const cards = [
   {
     icon: Brain,
-    title: "Una patologia rilevante",
-    text: "Il Parkinson è una malattia neurodegenerativa complessa, con impatti sulla qualità della vita e sulla gestione quotidiana dei sintomi."
+    title: "Una sfida neurologica reale",
+    text: "Il Parkinson richiede osservazioni continue e dati di qualità."
   },
   {
     icon: CloudFog,
-    title: "L'aria come fattore di rischio",
-    text: "La ricerca suggerisce possibili correlazioni tra esposizione al particolato fine e rischio neurodegenerativo."
+    title: "Contesto ambientale trascurato",
+    text: "L'esposizione al particolato è spesso esclusa dalle analisi."
   },
   {
     icon: ScanSearch,
-    title: "Dati parziali",
-    text: "Molti sistemi monitorano solo il movimento, senza integrare il contesto ambientale e gli indici fisiologici."
-  },
-  {
-    icon: AlertTriangle,
-    title: "Manca una visione integrata",
-    text: "Serve una lettura multidimensionale che metta insieme ambiente, corpo e interpretazione scientifica."
+    title: "Serve integrazione",
+    text: "I sistemi attuali non uniscono segnali fisiologici e ambiente."
   }
 ];
 
@@ -31,10 +26,10 @@ const ProblemSection = () => {
       <div className="mx-auto max-w-6xl space-y-10">
         <SectionHeader
           eyebrow="Il problema"
-          title="Comprendere il Parkinson oltre il sintomo"
-          description="L'inquinamento atmosferico è un elemento spesso ignorato nelle analisi neurodegenerative. Parkins-Off nasce per colmare questo vuoto con dati affidabili e contestualizzati."
+          title="Comprendere il Parkinson con più contesto"
+          description="Parkins-Off nasce per offrire una lettura integrata e prudente, senza rivelare dettagli sensibili del progetto."
         />
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-4 md:grid-cols-3">
           {cards.map((card, index) => (
             <motion.div
               key={card.title}

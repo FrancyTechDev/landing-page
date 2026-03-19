@@ -1,37 +1,27 @@
 import SectionHeader from "./SectionHeader";
 import { motion } from "framer-motion";
-import { Leaf, Radar, Watch, Activity, Cpu, LayoutDashboard } from "lucide-react";
+import { Leaf, Watch, Cpu, LayoutDashboard } from "lucide-react";
 
 const steps = [
   {
     icon: Leaf,
     title: "Raccolta dati ambientali",
-    text: "Sensori per particolato fine installati in punti di misura controllati."
-  },
-  {
-    icon: Radar,
-    title: "Analisi del particolato",
-    text: "Lettura PM10/PM2.5 con confronto rispetto a baseline locali."
+    text: "Monitoraggio controllato del particolato."
   },
   {
     icon: Watch,
     title: "Acquisizione dal braccialetto",
-    text: "Wearable multisensoriale con IMU e GSR per segnali fisiologici."
-  },
-  {
-    icon: Activity,
-    title: "Analisi tremore e stato neuro-vegetativo",
-    text: "Estrazione di pattern motori e indici di risposta fisiologica."
+    text: "Wearable multisensoriale per segnali fisiologici."
   },
   {
     icon: Cpu,
     title: "Elaborazione AI locale",
-    text: "Modelli offline per correlare dati ambientali e fisiologici."
+    text: "Elaborazione offline per interpretare i dati."
   },
   {
     icon: LayoutDashboard,
     title: "Dashboard di lettura",
-    text: "Visualizzazione comparativa con indicatori sperimentali." 
+    text: "Sintesi visiva per una lettura chiara."
   }
 ];
 
@@ -41,10 +31,10 @@ const SystemSection = () => {
       <div className="mx-auto max-w-6xl space-y-10">
         <SectionHeader
           eyebrow="Come funziona"
-          title="Una pipeline scientifica chiara e tracciabile"
-          description="Ogni fase del sistema è progettata per conservare la qualità del dato e generare indicatori coerenti con la ricerca neuro-ambientale."
+          title="Una pipeline essenziale e protetta"
+          description="Descriviamo solo la struttura generale, mantenendo riservati i dettagli sensibili."
         />
-        <div className="grid gap-4 lg:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, index) => (
             <motion.div
               key={step.title}
