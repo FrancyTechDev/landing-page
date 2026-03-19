@@ -22,14 +22,14 @@ const BioSection = () => {
             <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
               <div className="h-28 w-28 shrink-0 overflow-hidden rounded-2xl border border-white/10 bg-base-900/60">
                 <img
-                  src={`${baseUrl}assets/ai-engine.png`}
+                  src={`${baseUrl}assets/iooo.png`}
                   alt="Creatore AI Engine"
                   className="h-full w-full object-cover"
                 />
               </div>
               <div>
-                <p className="text-sm uppercase tracking-[0.2em] text-white/50">AI Engine</p>
-                <h3 className="mt-2 text-xl font-semibold">Creatore del motore AI</h3>
+                <p className="text-sm uppercase tracking-[0.2em] text-white/50">Parkins-Off AI Engineer</p>
+                <h3 className="mt-2 text-xl font-semibold">Parkins-Off AI Engineer</h3>
                 <p className="mt-2 text-sm text-white/70">
                   Responsabile dell'architettura di elaborazione locale, della logica di correlazione
                   e della sintesi dei dati neuro-ambientali.
@@ -47,14 +47,14 @@ const BioSection = () => {
             <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
               <div className="h-28 w-28 shrink-0 overflow-hidden rounded-2xl border border-white/10 bg-base-900/60">
                 <img
-                  src={`${baseUrl}assets/bracelet-creator.png`}
+                  src={`${baseUrl}assets/bracelet.png`}
                   alt="Creatore braccialetto Parkins-Off"
                   className="h-full w-full object-cover"
                 />
               </div>
               <div>
-                <p className="text-sm uppercase tracking-[0.2em] text-white/50">Bracelet Creator</p>
-                <h3 className="mt-2 text-xl font-semibold">Creatore del braccialetto</h3>
+                <p className="text-sm uppercase tracking-[0.2em] text-white/50">Parkins-Off Founder</p>
+                <h3 className="mt-2 text-xl font-semibold">Parkins-Off Founder</h3>
                 <p className="mt-2 text-sm text-white/70">
                   Progettazione del wearable multisensoriale, integrazione IMU e GSR, gestione
                   della raccolta dati e del firmware di acquisizione.
