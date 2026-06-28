@@ -3,26 +3,28 @@ import { motion } from "framer-motion";
 import { Image as ImageIcon } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 
+const withBase = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+
 const galleryItems = [
   {
     key: "stand-device",
     title: "Prototipo PARKINS-OFF esposto allo stand",
     alt: "Foto dello stand PARKINS-OFF con prototipo, poster e materiali espositivi",
-    candidates: ["/images/park.jpeg", "/assets/images/park.jpeg"],
+    candidates: [withBase("/images/park.jpeg"), withBase("/assets/images/park.jpeg")],
     aspect: "aspect-[4/3]"
   },
   {
     key: "presentazione-stand",
     title: "Presentazione del sistema multisensoriale",
     alt: "Due espositori presentano il sistema multisensoriale PARKINS-OFF allo stand",
-    candidates: ["/images/park2.jpeg", "/assets/images/park2.jpeg"],
+    candidates: [withBase("/images/park2.jpeg"), withBase("/assets/images/park2.jpeg")],
     aspect: "aspect-[4/5]"
   },
   {
     key: "wearable-closeup",
     title: "Dettaglio del dispositivo indossabile",
     alt: "Primo piano del prototipo indossabile PARKINS-OFF applicato sulla mano",
-    candidates: ["/images/park3.jpeg", "/assets/images/park3.jpeg"],
+    candidates: [withBase("/images/park3.jpeg"), withBase("/assets/images/park3.jpeg")],
     aspect: "aspect-[4/5]"
   }
 ];

@@ -3,8 +3,13 @@ import { motion } from "framer-motion";
 import { PlayCircle } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 
-const videoCandidates = ["/videos/parkins-off-demo.mp4", "/assets/videos/parkins-off-demo.mp4"];
-const posterCandidates = ["/images/park.jpeg", "/assets/images/park.jpeg"];
+const withBase = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+
+const videoCandidates = [
+  withBase("/videos/parkins-off-demo.mp4"),
+  withBase("/assets/videos/parkins-off-demo.mp4")
+];
+const posterCandidates = [withBase("/images/park.jpeg"), withBase("/assets/images/park.jpeg")];
 
 const PrototypeVideo = () => {
   const [videoIndex, setVideoIndex] = useState(0);
