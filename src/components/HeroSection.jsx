@@ -3,8 +3,7 @@ import { ArrowRight, Cpu, Activity, Wind } from "lucide-react";
 
 const badges = [
   "Progetto interdisciplinare",
-  "AI + Bioingegneria + Monitoraggio ambientale",
-  "Concorso FAST Milano"
+  "AI + Bioingegneria + Monitoraggio ambientale"
 ];
 
 const heroImage = `${import.meta.env.BASE_URL}images/park.jpeg`;
