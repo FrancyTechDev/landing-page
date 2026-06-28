@@ -6,10 +6,7 @@ const Footer = () => {
           <p className="font-display text-base text-white">Parkins-Off</p>
           <p className="mt-2">Sistema integrato ambiente-salute-AI per il Parkinson.</p>
         </div>
-        <div className="space-y-2 text-right">
-          <p>Contatti: info@parkins-off.it</p>
-          <p>FAST Milano · Progetto interdisciplinare</p>
-        </div>
+        <p className="text-right">FAST Milano · Progetto interdisciplinare</p>
       </div>
     </footer>
   );

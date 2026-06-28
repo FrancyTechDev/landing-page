@@ -7,6 +7,8 @@ const badges = [
   "Concorso FAST Milano"
 ];
 
+const heroImage = `${import.meta.env.BASE_URL}images/park.jpeg`;
+
 const HeroSection = () => {
   return (
     <section id="hero" className="relative px-6">
@@ -50,10 +52,10 @@ const HeroSection = () => {
               Scopri il progetto <ArrowRight size={16} />
             </a>
             <a
-              href="#contatti"
+              href="#media"
               className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-200"
             >
-              Esplora la soluzione
+              Guarda il prototipo
             </a>
           </div>
         </motion.div>
@@ -86,12 +88,13 @@ const HeroSection = () => {
                 </div>
               ))}
             </div>
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-              <div className="h-24 rounded-xl bg-gradient-to-r from-cyan-400/30 via-white/10 to-accent-400/30" />
-              <p className="mt-3 text-xs text-white/60">
-                Placeholder per illustrazione scientifica o mockup dashboard.
-              </p>
-            </div>
+            <figure className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-2">
+              <img
+                src={heroImage}
+                alt="Prototipo PARKINS-OFF esposto allo stand"
+                className="h-40 w-full rounded-xl object-cover"
+              />
+            </figure>
           </div>
         </motion.div>
       </div>

@@ -6,8 +6,6 @@ import SystemSection from "./components/SystemSection";
 import StrengthsSection from "./components/StrengthsSection";
 import ParkinsOffNextGeneration from "./components/ParkinsOffNextGeneration";
 import MediaGallery from "./components/MediaGallery";
-import PrototypeVideo from "./components/PrototypeVideo";
-import CTASection from "./components/CTASection";
 import Footer from "./components/Footer";
 
 const sections = [
@@ -17,8 +15,7 @@ const sections = [
   { id: "sistema", label: "Sistema" },
   { id: "punti-di-forza", label: "Punti di forza" },
   { id: "next-generation", label: "Next Gen" },
-  { id: "media", label: "Media" },
-  { id: "contatti", label: "Contatti" }
+  { id: "media", label: "Media" }
 ];
 
 function App() {
@@ -33,8 +30,6 @@ function App() {
         <StrengthsSection />
         <ParkinsOffNextGeneration />
         <MediaGallery />
-        <PrototypeVideo />
-        <CTASection />
       </main>
       <Footer />
     </div>
